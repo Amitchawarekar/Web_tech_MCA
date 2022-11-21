@@ -1,8 +1,9 @@
 #container 
 {
-    background-color:gray;
-    width:100%;
+    background-color: rgb(29, 109, 196);
+    width:40%;
     padding:10px;
+    margin-left: 450px;
 }
 
 * {
@@ -19,12 +20,14 @@
   }
   
   label {
+    font-size: 30px;
+    font-weight: bold;
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
   
   input[type=button] {
-    background-color: #04AA6D;
+    background-color: violet;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -47,4 +50,9 @@
     display: table;
     clear: both;
   }
+
+  h1{
+    text-align:center;
+  } 
+
   
