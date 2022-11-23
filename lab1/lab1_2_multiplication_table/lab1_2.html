@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Table Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lab1_2.css">
+
+</head>
+
+<body>
+
+    <h2><u>Multiplication Table Generator</u></h2>
+    <br>
+    <div id="container">
+        <form action>
+            <label for="t1" id="t1">Table Number:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="TN" name="TableNumber">
+            <br><br>
+            <label for="I1" id="I1">Initial Number:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="IN" name="InitialNumber">
+            <br><br>
+            <label for="E1" id="E1">Ending Number:</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="EN" name="EndingNumber">
+        </form>
+
+        <br><br>
+        <div class="center">
+            <input type="button" value="Print Table" onclick="myFunction()"/>
+        </div>
+        <br>
+
+    <div class="table">
+    <table class="table table-bordered" id="displayTables">
+    </table>
+    </div>
+</div>
+</body>
+<script>
+    function myFunction() {
+
+        var Number = document.getElementById("TN").value;
+        var T;
+        var I = document.getElementById("IN").value;
+        var E = document.getElementById("EN").value;
+        var temp = "";
+        for (T = I; T <= E; T++) {
+            temp += "<tr><td>" + Number + "</td><td>*</td><td>" + T + "</td><td>=</td><td>" + Number * T + "</td></tr>";
+        }
+
+        $("#displayTables").append(temp);
+
+    }
+</script>
