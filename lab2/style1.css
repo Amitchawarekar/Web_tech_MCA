@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Oswald&display=swap');
+
+body {
+    background-image:url(/images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgb(215, 225, 106);
+    border: 1px solid black;
+    font-family: 'roboto';
+    font-weight: bold;
+    border-radius: 30px;
+    padding: .5rem;
+    margin: 2rem 10rem;
+    width:45%;
+    margin-left: 400px;
+}
+
+.row {
+    margin: 20px;
+    padding: .5rem;
+}
+
+.textb {
+    width: 70%;
+    margin: .2rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.warning-span {
+    color: red;
+    padding: 2px 5px;
+    font-size: 20px;
+    
+}
+
+.btn-container {
+    text-align: center;
+    margin: 20px;
+    padding: .5rem;
+    border: 1px  black;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(51, 114, 135);
+    color: white;
+    padding: .7rem 5rem;
+    font-size: large;
+    border: 3px solid white;
+    margin: .2rem 2rem;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+label{
+    font-size: 25px;
+}
+
+.tab{
+    padding-left: 100px;
+}
+
+.tab1{
+    padding-left: 90px;
+}
+
+.tab2{
+    padding-left: 200px;
+}
+
+
+b{
+    color:rgb(41, 34, 124);
+    font-family: "Gentona";
+    font-size: 45px;
+}

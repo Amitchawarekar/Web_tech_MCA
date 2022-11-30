@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form validation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 class="center">
+           <u><b>Registration Form</b>
+        </h1>
+        <form action="" method="get">
+            <div class="row">
+                <span class="tab"></span><label class="label" for="fnamel" >First Name:</label> <br/>
+                <span class="tab1"></span><input type="text" name="fname" id="fname" class="textb" placeholder="Enter your First Name"/>
+                <div class="warning-span" id="span-fname"></div>
+            </div>
+            <div class="row">
+                <span class="tab"></span><label class="label" for="mnamel" >Middle Name:</label> <br/>
+                <span class="tab1"></span><input type="text" name="mname" id="mname" class="textb" placeholder="Enter your Middle Name"/>
+                <div class="warning-span" id="span-mname"></div>
+            </div>
+            <div class="row">
+                <span class="tab"></span><label class="label" for="lnamel" placeholder="Enter your Last Name">Last Name:</label> <br/>
+                <span class="tab1"></span><input type="text" name="lname" id="lname" class="textb" placeholder="Enter your Last Name"/>
+                <div class="warning-span" id="span-lname"></div>
+            </div>
+            <div class="row">
+                <span class="tab"></span><label class="label" for="emaill" >Email ID:</label> <br/>
+                <span class="tab1"></span><input type="email" name="email" id="email" class="textb" placeholder="Enter your Email ID"/>
+                <div class="warning-span" id="span-email"></div>
+            </div>
+            <div class="row">
+                <span class="tab"></span><label class="label" for="useridl" >User ID:</label> <br/>
+                <span class="tab1"></span><input type="text" name="userid" id="userid" class="textb" placeholder="Enter your User ID"/>
+                <div class="warning-span" id="span-userId"></div>
+            </div>
+            <div class="row">
+                <span class="tab"></span><label class="label" for="passwdl" >Password:</label> <br/>
+                <span class="tab1"></span><input type="text" name="passwd" id="passwd" class="textb" placeholder="Enter your Password" />
+                <div class="warning-span" id="span-passwd"></div>
+            </div>
+            <div class="row">
+                <span class="tab"></span><label class="label" for="cpasswdl" >Confirm Password:</label> <br/>
+                <span class="tab1"></span><input type="text" name="cpasswd" id="cpasswd" class="textb" placeholder="Retype your Password"/>
+                <div class="warning-span" id="span-cpasswd"></div>
+            </div>
+
+            <div class="btn-container">
+                <input type="button" class="btn" value="Submit" onclick="validate()">
+                <input type="button" class="btn" value="Reset" onclick="reset()">
+            </div>
+
+        </form>
+    </div>
+</body>
+<script src="index1.js"></script>
+
+</html>
